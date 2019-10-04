@@ -1,0 +1,97 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+    color: #666
+
+::selection
+    color: #fff
+
+    background-color: $accent-color
+
+body
+    position: relative
+
+    min-width: 320px
+    overflow-x: hidden
+
+    font-size: 16px
+    line-height: 1.65
+    font-family: $default-font
+    color: $text
+
+    input, textarea
+        border: #666 1px solid
+        outline: none
+        &:focus:required:invalid
+            border-color: red
+        &:required:valid
+            border-color: green
+
+.img-responsive
+    display: block
+    max-width: 100%
+    height: auto
+    &.img-width
+        width: 100%
+
+.text-center
+    text-align: center
+
+b, strong
+    font-weight: bold
+
+@import "media" // Always at the end
+
+//**
+//    Имена классов пишутся строчными буквами, используется дефис.
+
+//    Объявления логически связанных свойств группируются в следующем порядке:
+//        1. Позиционирование
+//        2. Блочная модель
+//        3. Типографика
+//        4. Оформление
+//        5. Анимация
+//        6. Разное
+
+//    Пример:
+//        - Позиционирование
+//            position: absolute
+//            top: 0
+//            right: 0
+//            bottom: 0
+//            left: 0
+//            z-index: 100
+
+//        - Блочная модель
+//            display: block
+//            float: right
+//            width: 100px
+//            height: 100px
+//            margin: 10px
+//            padding: 10px
+//            overflow-x: hidden
+
+//        - Типографика
+//            font: normal 13px/1.5 "Arial", sans-serif
+//            font-style: normal
+//            font-size: 13px
+//            line-height: 1.5
+//            font-family: "Arial", sans-serif
+//            text-align: center
+//            color: #333333
+
+//        - Оформление
+//            background-color: #f5f5f5
+//            border: 1px solid #e5e5e5
+//            border-radius: 3px
+//            outline: none
+//            opacity: 1
+
+//        - Анимация
+//            transition: color 1s
+
+//        - Разное
+//            will-change: auto
+// */
