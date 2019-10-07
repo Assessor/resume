@@ -34,7 +34,7 @@ gulp.task('sass', function() {
             overrideBrowserslist: ['last 10 versions']
         }))
         .pipe(cleancss({ level: { 1: { specialComments: 0 }}}))
-        .pipe(gulp.dest('dev/css'))
+        .pipe(gulp.dest('app/css'))
         .pipe(browserSync.stream())
 });
 
@@ -64,4 +64,4 @@ gulp.task('serve', function() {
     gulp.watch('app/*.html', gulp.parallel('code'));
 });
 
-gulp.task('default', gulp.parallel('sass', 'js', /* 'purgecss' */, 'browser-sync', 'serve'));
+gulp.task('default', gulp.parallel('sass', 'js', /* 'purgecss', */ 'browser-sync', 'serve'));
