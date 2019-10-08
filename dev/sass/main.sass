@@ -16,7 +16,7 @@ body
     min-width: 320px
     overflow-x: hidden
 
-    font-size: 16px
+    font-size: 14px
     line-height: 1.65
     font-family: $default-font
     color: $text
@@ -111,36 +111,44 @@ ul.nav-items
             font-weight: bold
             color: #333333
 
-.block-about
-    padding: 95px 50px 46px
 .about
-    .about--grey1
-       background-color: #f5f5f5
-    .about--grey2
-        background-color: #f0f0f0
-    .title
-        h2
-            position: relative
+    .block-about
+        padding: 95px 50px 46px
+        .about--grey1
+        background-color: #f5f5f5
+        .about--grey2
+            background-color: #f0f0f0
+        .title
+            h2
+                position: relative
 
-            font-size: 21px
-            &::before
-                content: ''
+                font-size: 21px
+                &::before
+                    content: ''
 
-                position: absolute
-                left: 0
-                top: -20px
+                    position: absolute
+                    left: 0
+                    top: -20px
 
-                width: 30px
-                height: 2px
+                    width: 30px
+                    height: 2px
 
-                background-color: #199cdb
-        h5
-            pdding-right: 15px
-            
-            font-size: 19px
-            line-height: 28px
-            font-weight: normal
-            color: #333333
+                    background-color: #199cdb
+            h5
+                pdding-right: 15px
+                
+                font-size: 19px
+                line-height: 28px
+                font-weight: normal
+                color: #333333
+
+        ul.about-info
+            list-style: none
+            li
+                line-height: 27px
+                span
+                    color: #333333
+                    font-weight: bold
 
 
 
