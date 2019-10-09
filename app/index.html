@@ -27,6 +27,9 @@
 <!-- Порядок расставления атрибутов -->
 <!-- 
 class, id, name, type, src, href, placeholder, width, height, alt, title, required, checked, disabled
+БЭМ: 
+    - Структура полного имени элемента соответствует схеме: имя-блока__имя-элемента (два подчеркивания).
+    - Имя модификатора отделяется от имени блока или элемента одним подчеркиванием (_).
 -->
 
 <body>
@@ -35,30 +38,36 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
             <div class="row">
 
                 <div class="col-sm-5 text-center">
-                    <ul class="nav-items">
-                        <li>
-                            <a class="scroll" href="#">Главная</a>
+                    <ul class="nav">
+                        <li сlass="nav__item">
+                            <a class="nav__link" href="#">Главная</a>
                         </li>
-                        <li>
-                            <a class="scroll" href="#">Обо мне</a>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Обо мне</a>
                         </li>
-                        <li>
-                            <a class="scroll" href="#">Резюме</a>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Резюме</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="col-sm-2 pd-0 text-center">
-                    <div class="name-profile">
-                        <h5>Ivan Maltsev</h5>
-                        <span>Архитектор / Разработчик</span>
+                    <div class="profile">
+                        <h5 class="profile__name">Ivan Maltsev</h5>
+                        <span class="profile__position">Архитектор / Разработчик</span>
                     </div>
                 </div>
 
                 <div class="col-sm-5 text-center">
-                    <ul class="nav-items">
-                        <li>
-                            <a class="scroll" href="#">Контакты</a>
+                    <ul class="nav">
+                        <li сlass="nav__item">
+                            <a class="nav__link" href="#">Мои проекты</a>
+                        </li>
+                        <li сlass="nav__item">
+                            <a class="nav__link" href="#">Мой блог</a>
+                        </li>
+                        <li сlass="nav__item">
+                            <a class="nav__link" href="#">Контакты</a>
                         </li>
                     </ul>
                 </div>
@@ -67,176 +76,161 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
         </div>
     </nav>
     
-    <section class="about">
+    <section class="about-container">
         <div class="container-fluid">
             <div class="row">
 
-                <div class="col-sm-4 block-about about--grey1">
-                    <div class="title">
-                        <h2>Кто Я?</h2>                        
-                    </div>
+                <div class="col-sm-4">
+                    <div class="about about_fill">
+                        <h2 class="about__title">Кто Я?</h2>
                     
-                    <h5>
-                        Небольшое описание обо мне, архитектор, разработчик, хороший челлвек
-                    </h5>
+                        <h5 class="about__desc">
+                            Небольшое описание обо мне, архитектор, разработчик, хороший челлвек
+                        </h5>
 
-                    <p class="mt-20">
-                        Учился, женился, и так далее
-                    </p>
+                        <p class="about__notice">
+                            Учился, женился, и так далее
+                        </p>
 
-                    <a class="btn btn--brd btn--radius mt-30" href="#">Скачать резюме</a>
+                        <a class="btn btn_brd btn_radius" href="#">Скачать резюме</a>
+                    </div>
                 </div>
 
-                <div class="col-sm-4 block-about about--grey2">
-                    <div class="title">
-                        <h2>Персональная информация</h2>
+                <div class="col-sm-4">
+                    <div class="about about_fill about_fill-center">
+                        <h2 class="about__title">Персональная информация</h2>
+
+                        <ul class="about__info">
+                            <li><span>День рождение: </span>30.07.1978</li>
+                            <li><span>Телефон: </span>+7 951 93 89 665</li>
+                            <li><span>Email: </span>ivan.maltsev78@gmail.com</li>
+                            <li><span>Skype: </span>malcev_ivan</li>
+                            <li><span>Telegram: </span>+7 951 93 89 665</li>
+                            <li><span>Адрес: </span>Россия, г. Пермь, ул. Сысольская</li>
+                        </ul>
+
+                        <ul class="about__social">
+                            <li>facebook</li>
+                        </ul>
                     </div>
-
-                    <ul class="about-info mt-30">
-                        <li><span>День рождение: </span>30.07.1978</li>
-                        <li><span>Телефон: </span>+7 951 93 89 665</li>
-                        <li><span>Email: </span>ivan.maltsev78@gmail.com</li>
-                        <li><span>Skype: </span>malcev_ivan</li>
-                        <li><span>Telegram: </span>+7 951 93 89 665</li>
-                        <li><span>Адрес: </span>Россия, г. Пермь, ул. Сысольская</li>
-                    </ul>
-
-                    <ul class="about-social mt-20">
-                        <li>facebook</li>
-                    </ul>
                 </div>
 
-                <div class="col-sm-4 block-about about--grey1">
-                    <div class="title">
-                        <h2>Моя экспертиза</h2> 
-                    </div>
+                <div class="col-sm-4">
+                    <div class="about about_fill">
+                        <h2 class="about__title">Моя экспертиза</h2>
 
-                    <div class="about-expertise mt-30">
                         <div class="expertise">
-                            <div class="expertise-ico"></div>
-                            <div class="expertise-desc">
-                                <h6>Веб-разработка</h6>
-                                <p>Описание</p>
+                            <div class="expertise__item">
+                                <div class="expertise__ico"></div>
+                                <div class="expertise__desc">
+                                    <h6>Веб-разработка</h6>
+                                    <p>Описание</p>
+                                </div>
+                            </div>                                                
+
+                            <div class="expertise__item">
+                                <div class="expertise__ico"></div>
+                                <div class="expertise__desc">
+                                    <h6>Тим-лидерство</h6>
+                                    <p>Описание</p>
+                                </div>
                             </div>
-                        </div>                                                
 
-                        <div class="expertise">
-                            <div class="expertise-ico"></div>
-                            <div class="expertise-desc">
-                                <h6>Тим-лидерство</h6>
-                                <p>Описание</p>
+                            <div class="expertise__item">
+                                <div class="expertise-ico"></div>
+                                <div class="expertise-desc">
+                                    <h6>Тех-лидерство</h6>
+                                    <p>Описание</p>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="expertise">
-                            <div class="expertise-ico"></div>
-                            <div class="expertise-desc">
-                                <h6>Тех-лидерство</h6>
-                                <p>Описание</p>
-                            </div>
-                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="resume">
+    <section class="resume-container">
         <div class="container">
             
             <div class="row">
                 <div class="col-md-12">
-                    <div class="block-title">
+                    <header class="header-title">
                         <h2>Мое резюме</h2>
-                    </div>
-                    
+                    </header>                    
                 </div>                
             </div>
 
             <div class="row">
-                <div class="col-md-4 col-sm-6 resume-box">
-                    <div class="inner-resume-box">
-                        <div class="block-icon"><i class="ic-toolbox"></i></div>
-                        <div class="block-title">
-                            <h3 class="title medium">Экспертиза</h3>
-                        </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="resume">
+                        <div class="resume__icon"><i class="ic-toolbox"></i></div>
+                        <h3 class="resume__title">Экспертиза</h3>
                             
                         <div class="timeline">
-                            <div class="exp">
-                            <div class="hgroup mb-5">
-                                <h4>ООО АйТи Парма</h4>
-                                <h6>Feb 2015 – <span class="current">Current</span></h6>
+                            <div class="working">
+                                <h4 class="working__org">ООО АйТи Парма</h4>
+                                <h6 class="working__interval">Feb 2015 – <span class="working_current">Current</span></h6>
+                                <p class="working_desc">Описание</p>
                             </div>
-                            <p>Описание</p>
-                        </div>
                                 
-                        <div class="exp">
-                            <div class="hgroup mb-5">
-                                <h4>Web Developer – Mutation Media  </h4>
-                                <h6>Sept 2015 – Nov 2015</h6>
+                            <div class="working">
+                                <h4 class="working__org">ООО АйТи Парма</h4>
+                                <h6 class="working__interval">Feb 2015 – <span class="working_current">Current</span></h6>
+                                <p class="working_desc">Описание</p>
                             </div>
-                            <p>Описание</p>
                         </div>
-
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-4 col-sm-6 resume-box">
-                <div class="inner-resume-box">
-                    <div class="block-icon"><i class="ic-pencil"></i></div>
-                        <div class="block-title">
-                            <h3 class="title medium">Образование</h3>
-                        </div>
 
-                        <div class="timeline mt-40">
+                <div class="col-md-4 col-sm-6">
+                    <div class="resume">
+                        <div class="resume__icon"><i class="ic-pencil"></i></div>
+                        <h3 class="resume__title">Образование</h3>
+
+                        <div class="timeline">
                             <div class="edu">
-                                <div class="hgroup mb-5">
-                                    <h4>Bachelor Degree – Mutation Media </h4>
-                                    <h6>Feb 2015 – Nov 2015</h6>
-                                </div>
-                                <p>Описание</p>
+                                <h4 class="edu__org">ООО АйТи Парма</h4>
+                                <h6 class="edu__interval">Feb 2015 – 2018</h6>
+                                <p class="edu_desc">Описание</p>
                             </div>
-                            
+                                
                             <div class="edu">
-                                <div class="hgroup mb-5">
-                                    <h4>Master Degree – Mutation Media  </h4>
-                                    <h6>Sept 2015 – Nov 2015</h6>
-                                </div>
-                                <p>Описание</p>
+                                <h4 class="edu__org">ООО АйТи Парма</h4>
+                                <h6 class="edu__interval">Feb 2015 – 2018</h6>
+                                <p class="edu_desc">Описание</p>
                             </div>
                         </div>
                     </div>
                 </div>
                     
-                <div class="col-md-4 col-sm-6 resume-box">
-                    <div class="inner-resume-boxe">
-                        <div class="block-icon"><i class="ic-tools-2"></i></div>
-                        <div class="block-title">
-                            <h3 class="title medium">Skills</h3>
-                        </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="resume">
+                        <div class="resume__icon"><i class="ic-skills"></i></div>
+                        <h3 class="resume__title">Skills</h3>
 
-                        <div class="skills mt-40 ">
-                            <ul class="skill-list clearfix">
+                        <div class="skills">
+                            <ul class="skill-list">
                                 <li>
                                     <h4>HTML/CSS</h4>
-                                    <div class="rating">
+                                    <div class="skill-list__rating">
                                         <span></span>
                                         <span></span>
                                         <span></span>
                                         <span></span>
-                                        <span class="transparent"></span>	
+                                        <span class="skill-list_transparent"></span>	
                                     </div>
                                 </li>
                                 <li>
                                     <h4>Jquery</h4>
-                                    <div class="rating">
+                                    <div class="skill-list__rating">
                                         <span></span>
                                         <span></span>
                                         <span></span>
                                         <span></span>
-                                        <span class="transparent"></span>	
+                                        <span class="skill-list_transparent"></span>	
                                     </div>
                                 </li>
                             </ul>
@@ -244,33 +238,31 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                     </div>
                 </div>
                     
-                <div class="col-md-4 col-sm-6 resume-box">
-                    <div class="inner-resume-box">
-                        <div class="block-icon"><i class="ic-mic"></i></div>
-                        <div class="block-title">
-                            <h3 class="title medium">Languages</h3>
-                        </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="resume">
+                        <div class="resume__icon"><i class="ic-skills"></i></div>
+                        <h3 class="resume__title">Languages</h3>
 
-                        <div class="skills mt-40">
-                            <ul class="skill-list clearfix">
+                        <div class="skills">
+                            <ul class="skill-list">
                                 <li>
                                     <h4>English</h4>
-                                    <div class="rating">
+                                    <div class="skill-list__rating">
                                         <span></span>
                                         <span></span>
                                         <span></span>
                                         <span></span>
-                                        <span class="transparent"></span>	
+                                        <span class="skill-list_transparent"></span>	
                                     </div>
                                 </li>
                                 <li>
                                     <h4>French</h4>
-                                    <div class="rating">
+                                    <div class="skill-list__rating">
                                         <span></span>
                                         <span></span>
                                         <span></span>
-                                        <span class="transparent"></span>
-                                        <span class="transparent"></span>	
+                                        <span class="skill-list_transparent"></span>
+                                        <span class="skill-list_transparent"></span>	
                                     </div>
                                 </li>
                             </ul>
@@ -278,29 +270,27 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6 resume-box">
-                    <div class="inner-resume-box">
-                        <div class="block-icon"><i class="ic-telescope"></i></div>
-                        <div class="block-title">
-                            <h3 class="title medium">Interests</h3>
-                        </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="resume">
+                        <div class="resume__icon"><i class="ic-telescope"></i></div>
+                        <h3 class="resume__title">Interests</h3>
 
-                        <div class="hb-list mt-40 ">
+                        <div class="interests-list">
                             <ul>
                                 <li>
-                                    <span><i class="ic-megaphone"></i></span>
+                                    <span><i class="interests-list_megaphone"></i></span>
                                     <h6>Music</h6>
                                 </li>
                                 <li>
-                                    <span><i class="ic-strategy"></i></span>
+                                    <span><i class="interests-list_strategy"></i></span>
                                     <h6>Gaming</h6>
                                 </li>
                                 <li>
-                                    <span><i class="ic-hotairballoon"></i></span>
+                                    <span><i class="interests-list_hotairballoon"></i></span>
                                     <h6>Travel</h6>
                                 </li>
                                 <li>
-                                    <span><i class="ic-basket"></i></span>
+                                    <span><i class="interests-list_basket"></i></span>
                                     <h6>Cooking</h6>
                                 </li>
                             </ul>
@@ -308,14 +298,12 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-6 resume-box">
-                    <div class="inner-resume-boxe">
-                        <div class="block-icon"><i class="ic-wallet"></i></div>
-                        <div class="block-title">
-                            <h3 class="title medium">Assets</h3>
-                        </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="resume">
+                        <div class="resume__icon"><i class="ic-telescope"></i></div>
+                        <h3 class="resume__title">Assets</h3>
 
-                        <div class="ast-list mt-40">
+                        <div class="assets-list">
                             <ul>
                                 <li>
                                     <span>Responsible</span>
@@ -338,17 +326,18 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <section class="parfolio">
+    <section class="parfolio-container">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="block-title">
-                        <h2>Личные проекта</h2>
-                    </div>                
-                </div>
+                    <header class="header-title">
+                        <h2>Личные проекты</h2>
+                    </header>                    
+                </div>                
             </div>
 
             <div class="row">
@@ -357,131 +346,124 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
         </div>
     </section>
 
-    <section class="blog">
-        <div class="block-content">
-            <div class="container ">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="block-title mb-60">
-                            <h2 class="title">Мои записки</h2>
-                        </div>
-                    </div>
-                </div>
+    <section class="blog-container">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-12">
+                    <header class="header-title">
+                        <h2>Мои записки</h2>
+                    </header>                    
+                </div>                
+            </div>
                 
-                <div class="row">
-                    <div class="block-posts">
-                        <div class="col-md-4 col-sm-4">
-                            <div class="post-media">
-                                <img src="img/blog/1.jpg" alt="">
-                            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="post">
+                        <div class="media">
+                            <img class="logo" src="img/blog/1.jpg" alt="">
+                        </div>
 
-                            <div class="post-details latest pb-20">
-                                <h4 class="uppercase pt-15 pb-15"><a href="blog_single.html">Raw Introduction</a></h4>
-                            
-                                <div class="post-meta t-center pt-10 pb-10">
-                                    <ul class="clearfix">
-                                        <li class="date">03 May</li>
-                                        <li><i class="icon-comment"></i><span>Комментарии<a href="#"> (2)</a></span></li>
-                                    </ul>
-                                </div>
-                            
-                                <p class="pt-15 pb-20">Ананс записи...</p>
-                            
-                                <a class="more" href="blog_single.html">читать дальше <span>→</span> </a>
+                        <div class="details details_latest">
+                            <h4 class="details__title"><a href="blog_single.html">Raw Introduction</a></h4>
+                        
+                            <div class="meta">
+                                <ul>
+                                    <li class="meta__date">03 May</li>
+                                    <li><i class="meta__icon-comment"></i><span>Комментарии<a href="#"> (2)</a></span></li>
+                                </ul>
                             </div>
+                            
+                            <p class="details__notice">Ананс записи...</p>
+                            
+                            <a class="details__more" href="blog_single.html">читать дальше <span>→</span> </a>
                         </div>
                     </div>
                 </div>
+            </div>
                         
-                <div class="row">
-                    <div class="col-sm-12 t-center">
-                        <a class="but brd  white mt-80 mb-80 " href="blog.html">Все записи</a>                      
-                    </div>
-                                    
+            <div class="row">
+                <div class="col-sm-12">
+                    <a class="btn btn_brd" href="blog.html">Все записи</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="block-content">
-            <div class="block-contact">
-                <div class="contact-overlay bg-grey-dark">
-                    <div class="block-title mb-60">
-                        <h2 class="title white">Send a Message</h2>
-                    </div>
-                        
-                    <div class="block-form">
-                        <form class="contact-form clearfix" method="post" action="send.php">
-                            <input type="text" placeholder="Name *" value="" id="name" name="name">
-                            <input type="text" placeholder="Email *" value="" id="email" name="email">
-                            <input type="text" placeholder="Subject" value="" id="subject" name="subject">
-                            <textarea name="message" placeholder="Message *" id="message" cols="45" rows="10"></textarea>
-                            <input type="submit" value="Send Message" class="but opc white submit">
+    <section class="contact-container">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-12">
+                    <header class="header-title">
+                        <h2>Отправить сообщение</h2>
+                    </header>                    
+                </div>                
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="send-form">
+                        <form method="post" action="send.php">
+                            <input class="send-form__input" id="name" name="name" type="text" placeholder="Name *" value="" />
+                            <input class="send-form__input" id="email" name="email" type="text" placeholder="Email *" value="" />
+                            <input class="send-form__input" id="subject" name="subject" type="text" placeholder="Subject" value="" />
+                            <textarea class="send-form__textarea" id="message" name="message" placeholder="Message *" cols="45" rows="10"></textarea>
+                            <input class="btn btn-submit" type="submit" value="Отправить сообщение">
                         </form>
                     </div>
                 </div>
-
             </div>
-
         </div>
-        <div class="block-content bg-grey pt-80 pb-80">
-            <div class="container">
-                <div class="row">
-                    <div class="block-info-holder clearfix">
-                        <div class="col-sm-4">
-                            <div class="block-info">
-                                <div class="info-ico">
-                                    <span class="ico">
-                                        <i class="ic-phone"></i>
-                                    </span>
-                                </div>
 
-                                <div class="info-det">
-                                    <h5 class="mb-10">Call Me</h5>
-                                    <p>Office : + 123-456-789-456<br>
-                                    Cell : + 126-156-489-756</p>
-                                </div>
-                            </div>
-                        </div>
-                                                        
-                        <div class="col-sm-4">
-                            <div class="block-info">
-                                <div class="info-ico">
-                                    <span class="ico">
-                                        <i class="ic-streetsign"></i>
-                                    </span>
-                                </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="contact">
+                    <div class="contact-info">
+                        <span class="contact-info__ico">
+                            <i class="contact-info__phone"></i>
+                        </span>
+                    </div>
 
-
-                                <div class="info-det">
-                                    <h5 class="mb-10">Address</h5>
-                                    <p>1234 Street Road<br> City Name, IN 567 890.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="block-info">
-                                <div class="info-ico">
-                                    <span class="ico">
-                                        <i class="ic-clock"></i>
-                                    </span>
-                                </div>
-
-                                <div class="info-det">
-                                    <h5 class="mb-10">Work hours</h5>
-                                    <p>
-                                        Monday - Friday : 09am - 18pm<br>
-                                        Saturday : 09am - 1pm
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="contact-details">
+                        <h5>Call Me</h5>
+                        <p>Office : + 123-456-789-456<br>
+                        Cell : + 126-156-489-756</p>
                     </div>
                 </div>
-                    
             </div>
+
+            <div class="col-sm-4">
+                <div class="contact">
+                    <div class="contact-info">
+                        <span class="contact-info__ico">
+                            <i class="contact-info__address"></i>
+                        </span>
+                    </div>
+
+                    <div class="contact-details">
+                        <h5>Address</h5>
+                        <p>1234 Street Road<br> City Name, IN 567 890.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="contact">
+                    <div class="contact-info">
+                        <span class="contact-info__ico">
+                            <i class="contact-info__work"></i>
+                        </span>
+                    </div>
+
+                    <div class="contact-details">
+                        <h5>Work hours</h5>
+                        <p>
+                            Monday - Friday : 09am - 18pm<br>
+                            Saturday : 09am - 1pm
+                        </p>
+                    </div>
+                </div>
+            </div>
+                                                        
         </div>
     </section>
 
@@ -489,15 +471,16 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
          <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <ul class="socials round pb-20">
+                    <ul class="socials">
                         <li><a href="#"><i class="icon-facebook-circled"></i><span>Facebook</span></a></li>
                         <li><a href="#"><i class="icon-twitter-circled"></i><span>Twitter</span></a></li>
                         <li><a href="#"><i class="icon-linkedin-circled"></i><span>Linkedin</span></a></li>
                         <li><a href="#"><i class="icon-dribbble-circled"></i><span>Dribbble</span></a></li>
                     </ul>
+
                     <hr />
     
-                    <p class="pt-20">© 2019 all rights reserved. A product of <a href="https://parlaybet.ru" target="_blank">Сделано! Ivan Maltsev</a>.</p>
+                    <p>© 2019 all rights reserved. A product of <a href="https://parlaybet.ru" target="_blank">Сделано! Ivan Maltsev</a>.</p>
     
                 </div>
     
