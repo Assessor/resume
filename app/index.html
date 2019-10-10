@@ -360,22 +360,68 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                 <div class="col-md-4 col-sm-4">
                     <div class="post">
                         <div class="media">
-                            <img class="logo" src="img/blog/1.jpg" alt="">
+                            <img class="logo" src="https://images.pexels.com/photos/3011846/pexels-photo-3011846.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=247&w=120" alt="" />
                         </div>
 
                         <div class="details details_latest">
-                            <h4 class="details__title"><a href="blog_single.html">Raw Introduction</a></h4>
+                            <h4 class="details__title"><a href="#">Зачем мне это?</a></h4>
                         
                             <div class="meta">
                                 <ul>
-                                    <li class="meta__date">03 May</li>
-                                    <li><i class="meta__icon-comment"></i><span>Комментарии<a href="#"> (2)</a></span></li>
+                                    <li class="meta__date">10.10.2019</li>
+                                    <li><i class="fa fa-comment"></i><span>Комментарии<a href="#"> (2)</a></span></li>
                                 </ul>
                             </div>
                             
                             <p class="details__notice">Ананс записи...</p>
                             
-                            <a class="details__more" href="blog_single.html">читать дальше <span>→</span> </a>
+                            <a class="details__more" href="#">читать дальше <span>→</span> </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="post">
+                        <div class="media">
+                            <img class="logo" src="https://images.pexels.com/photos/2575830/pexels-photo-2575830.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=247&w=260" alt="" />
+                        </div>
+
+                        <div class="details details_latest">
+                            <h4 class="details__title"><a href="#">Зачем мне это?</a></h4>
+                        
+                            <div class="meta">
+                                <ul>
+                                    <li class="meta__date">10.10.2019</li>
+                                    <li><i class="fa fa-comment"></i><span>Комментарии<a href="#"> (2)</a></span></li>
+                                </ul>
+                            </div>
+                            
+                            <p class="details__notice">Ананс записи...</p>
+                            
+                            <a class="details__more" href="#">читать дальше <span>→</span> </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="post">
+                        <div class="media">
+                            <img class="logo" src="https://images.pexels.com/photos/1231023/pexels-photo-1231023.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=247&w=260" alt="" />
+                        </div>
+
+                        <div class="details details_latest">
+                            <h4 class="details__title"><a href="#">Зачем мне это?</a></h4>
+                        
+                            <div class="meta">
+                                <ul>
+                                    <li class="meta__date">10.10.2019</li>
+                                    <li><i class="fa fa-comment"></i><span>Комментарии<a href="#"> (2)</a></span></li>
+                                </ul>
+                            </div>
+                            
+                            <p class="details__notice">Ананс записи...</p>
+                            
+                            <a class="details__more" href="#">читать дальше <span>→</span> </a>
                         </div>
                     </div>
                 </div>
@@ -383,14 +429,16 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                         
             <div class="row">
                 <div class="col-sm-12">
-                    <a class="btn btn_brd" href="blog.html">Все записи</a>
+                    <div class="wrapper wrapper_center">
+                        <a class="btn btn_radius btn_border" href="#">Все записи</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="contact-container">
-        <div class="container ">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <header class="header-title">
@@ -400,66 +448,76 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
             </div>
 
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-5">
                     <div class="send-form">
                         <form method="post" action="send.php">
-                            <input class="send-form__input" id="name" name="name" type="text" placeholder="Name *" value="" />
+                            <input class="send-form__input" id="name" name="name" type="text" placeholder="Имя *" value="" />
                             <input class="send-form__input" id="email" name="email" type="text" placeholder="Email *" value="" />
-                            <input class="send-form__input" id="subject" name="subject" type="text" placeholder="Subject" value="" />
-                            <textarea class="send-form__textarea" id="message" name="message" placeholder="Message *" cols="45" rows="10"></textarea>
-                            <input class="btn btn-submit" type="submit" value="Отправить сообщение">
+                            <input class="send-form__input" id="subject" name="subject" type="text" placeholder="Тема письма" value="" />
+                            <textarea class="send-form__textarea" id="message" name="message" placeholder="Сообщение *" cols="45" rows="10"></textarea>
+                            <input class="btn btn-submit btn_radius btn_fill" type="submit" value="Отправить" />
                         </form>
                     </div>
                 </div>
+
+                <div class="col-md-7"></div>
             </div>
-        </div>
 
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="contact">
-                    <div class="contact-info">
-                        <span class="contact-info__ico">
-                            <i class="contact-info__phone"></i>
-                        </span>
-                    </div>
 
-                    <div class="contact-details">
-                        <h5>Call Me</h5>
-                        <p>Office : + 123-456-789-456<br>
-                        Cell : + 126-156-489-756</p>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="contact">
+                        <div class="contact-info">
+                            <div class="contact-info__ico">
+                                <span>
+                                    <i class="fa fa-mobile"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="contact-details">
+                            <h5>Позвонить мне</h5>
+                            <p>Офис : +7-123-22-55-444<br /> 
+                            Сотовый : +7-951-93-89-665</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-sm-4">
-                <div class="contact">
-                    <div class="contact-info">
-                        <span class="contact-info__ico">
-                            <i class="contact-info__address"></i>
-                        </span>
-                    </div>
 
-                    <div class="contact-details">
-                        <h5>Address</h5>
-                        <p>1234 Street Road<br> City Name, IN 567 890.</p>
+                <div class="col-sm-4">
+                    <div class="contact">
+                        <div class="contact-info">
+                            <div class="contact-info__ico">
+                                <span>
+                                    <i class="fa fa-map-marker"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="contact-details">
+                            <h5>Адрес</h5>
+                            <p>Россия, 614032, г. Пермь, <br /> ул. Сысольская</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-sm-4">
-                <div class="contact">
-                    <div class="contact-info">
-                        <span class="contact-info__ico">
-                            <i class="contact-info__work"></i>
-                        </span>
-                    </div>
+                <div class="col-sm-4">
+                    <div class="contact">
+                        <div class="contact-info">
+                            <div class="contact-info__ico">
+                                <span>
+                                    <i class="fa fa-clock-o"></i>
+                                </span>
+                            </div>
+                        </div>
 
-                    <div class="contact-details">
-                        <h5>Work hours</h5>
-                        <p>
-                            Monday - Friday : 09am - 18pm<br>
-                            Saturday : 09am - 1pm
-                        </p>
+                        <div class="contact-details">
+                            <h5>Доступен</h5>
+                            <p>
+                                Пн.-Пт.: 09:00 - 18:00<br>
+                                Сб.: 09:00 - 13:00
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -467,20 +525,20 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
         </div>
     </section>
 
-    <footer>
+    <footer class="footer-container">
          <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <ul class="socials">
-                        <li><a href="#"><i class="icon-facebook-circled"></i><span>Facebook</span></a></li>
-                        <li><a href="#"><i class="icon-twitter-circled"></i><span>Twitter</span></a></li>
-                        <li><a href="#"><i class="icon-linkedin-circled"></i><span>Linkedin</span></a></li>
-                        <li><a href="#"><i class="icon-dribbble-circled"></i><span>Dribbble</span></a></li>
+                        <li><a href="#"><i class="fa fa-facebook-square"></i><span>Facebook</span></a></li>
+                        <li><a href="#"><i class="fa fa-twitter-square"></i><span>Twitter</span></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin-square"></i><span>Linkedin</span></a></li>
+                        <li><a href="#"><i class="fa fa-vk"></i><span>ВКонтакте</span></a></li>
                     </ul>
 
                     <hr />
     
-                    <p>© 2019 all rights reserved. A product of <a href="https://parlaybet.ru" target="_blank">Сделано! Ivan Maltsev</a>.</p>
+                    <p>© 2019 Все права защищены<a href="https://parlaybet.ru" target="_blank">Сделано! Ivan Maltsev</a>.</p>
     
                 </div>
     
