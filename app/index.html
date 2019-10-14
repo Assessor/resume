@@ -92,7 +92,7 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                             Учился, женился, и так далее
                         </p>
 
-                        <a class="btn btn_brd btn_radius" href="#">Скачать резюме</a>
+                        <a class="btn btn_border btn_radius" href="#">Скачать резюме</a>
                     </div>
                 </div>
 
@@ -110,7 +110,10 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                         </ul>
 
                         <ul class="about__social">
-                            <li>facebook</li>
+                            <li><i class="fa fa-facebook"></i></li>
+                            <li><i class="fa fa-twitter"></i></li>
+                            <li><i class="fa fa-vk"></i></li>
+                            <li><i class="fa fa-linkedin"></i></li>
                         </ul>
                     </div>
                 </div>
@@ -121,7 +124,7 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
 
                         <div class="expertise">
                             <div class="expertise__item">
-                                <div class="expertise__ico"></div>
+                                <div class="expertise__ico"><i class="fa fa-desktop"></i></div>
                                 <div class="expertise__desc">
                                     <h6>Веб-разработка</h6>
                                     <p>Описание</p>
@@ -129,7 +132,7 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                             </div>                                                
 
                             <div class="expertise__item">
-                                <div class="expertise__ico"></div>
+                                <div class="expertise__ico"><i class="fa fa-users"></i></div>
                                 <div class="expertise__desc">
                                     <h6>Тим-лидерство</h6>
                                     <p>Описание</p>
@@ -137,8 +140,8 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                             </div>
 
                             <div class="expertise__item">
-                                <div class="expertise-ico"></div>
-                                <div class="expertise-desc">
+                                <div class="expertise__ico"><i class="fa fa-cubes"></i></div>
+                                <div class="expertise__desc">
                                     <h6>Тех-лидерство</h6>
                                     <p>Описание</p>
                                 </div>
@@ -166,7 +169,7 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                 <div class="col-md-4 col-sm-6">
                     <div class="resume">
                         <div class="resume-wrapper">
-                            <div class="resume__icon"><i class="fa fa-server"></i></div>
+                            <div class="resume__icon"><i class="fa fa-briefcase"></i></div>
                             <h3 class="resume__title">Экспертиза</h3>
                                 
                             <div class="timeline">
@@ -192,11 +195,10 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                     </div>
                 </div>
 
-
                 <div class="col-md-4 col-sm-6">
                     <div class="resume">
                         <div class="resume-wrapper">
-                            <div class="resume__icon"><i class="fa fa-edit"></i></div>
+                            <div class="resume__icon"><i class="fa fa-university"></i></div>
                             <h3 class="resume__title">Образование</h3>
 
                             <div class="timeline">
@@ -220,7 +222,7 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                     <div class="resume">
                         <div class="resume-wrapper">
                             <div class="resume__icon"><i class="fa fa-wrench"></i></div>
-                            <h3 class="resume__title">Skills</h3>
+                            <h3 class="resume__title">Навыки</h3>
 
                             <div class="skills">
                                 <ul class="skill-list">
@@ -292,88 +294,94 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                     
                 <div class="col-md-4 col-sm-6">
                     <div class="resume">
-                        <div class="resume__icon"><i class="ic-skills"></i></div>
-                        <h3 class="resume__title">Languages</h3>
+                        <div class="resume-wrapper">
+                            <div class="resume__icon"><i class="fa fa-language"></i></div>
+                            <h3 class="resume__title">Владение языками</h3>
 
-                        <div class="skills">
-                            <ul class="skill-list">
-                                <li>
-                                    <h4>English</h4>
-                                    <div class="skill-list__rating">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span class="skill-list_transparent"></span>	
-                                    </div>
-                                </li>
-                                <li>
-                                    <h4>French</h4>
-                                    <div class="skill-list__rating">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span class="skill-list_transparent"></span>
-                                        <span class="skill-list_transparent"></span>	
-                                    </div>
-                                </li>
-                            </ul>
+                            <div class="skills">
+                                <ul class="skill-list">
+                                    <li>
+                                        <h4>Русский</h4>
+                                        <div class="skill-list__rating">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span class="skill-list_transparent"></span>	
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h4>English</h4>
+                                        <div class="skill-list__rating">
+                                            <span></span>
+                                            <span></span>
+                                            <span class="skill-list_transparent"></span>
+                                            <span class="skill-list_transparent"></span>
+                                            <span class="skill-list_transparent"></span>	
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 col-sm-6">
                     <div class="resume">
-                        <div class="resume__icon"><i class="ic-telescope"></i></div>
-                        <h3 class="resume__title">Interests</h3>
+                        <div class="resume-wrapper">
+                            <div class="resume__icon"><i class="fa fa-heart"></i></div>
+                            <h3 class="resume__title">Мои интересы</h3>
 
-                        <div class="interests-list">
-                            <ul>
-                                <li>
-                                    <span><i class="interests-list_megaphone"></i></span>
-                                    <h6>Music</h6>
-                                </li>
-                                <li>
-                                    <span><i class="interests-list_strategy"></i></span>
-                                    <h6>Gaming</h6>
-                                </li>
-                                <li>
-                                    <span><i class="interests-list_hotairballoon"></i></span>
-                                    <h6>Travel</h6>
-                                </li>
-                                <li>
-                                    <span><i class="interests-list_basket"></i></span>
-                                    <h6>Cooking</h6>
-                                </li>
-                            </ul>
+                            <div class="interests-list">
+                                <ul>
+                                    <li>
+                                        <span><i class="fa fa-music"></i></span>
+                                        <h6>Музыка</h6>
+                                    </li>
+                                    <li>
+                                        <span><i class="fa fa-plane"></i></span>
+                                        <h6>Путешествия</h6>
+                                    </li>
+                                    <li>
+                                        <span><i class="fa fa-futbol-o"></i></span>
+                                        <h6>Футбол</h6>
+                                    </li>
+                                    <li>
+                                        <span><i class="fa fa-book"></i></span>
+                                        <h6>Книги</h6>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 col-sm-6">
                     <div class="resume">
-                        <div class="resume__icon"><i class="ic-telescope"></i></div>
-                        <h3 class="resume__title">Assets</h3>
+                        <div class="resume-wrapper">
+                            <div class="resume__icon"><i class="fa fa-bullhorn"></i></div>
+                            <h3 class="resume__title">Мои качества</h3>
 
-                        <div class="assets-list">
-                            <ul>
-                                <li>
-                                    <span>Responsible</span>
-                                    <span>Diligence</span>
-                                    <span>Labour</span>
-                                </li>
-                                
-                                <li>
-                                    <span>Rigor</span>
-                                    <span>Creative</span>
-                                    <span>Funny</span>
-                                </li>
-                                
-                                <li>
-                                    <span>Great Communicator</span>
-                                    <span>Flexible</span>
-                                </li>
-                            </ul>
+                            <div class="assets-list">
+                                <ul>
+                                    <li>
+                                        <span>Ответственный</span>
+                                        <span>Трудолюбивый</span>
+                                        <span>Активный</span>
+                                    </li>
+                                    
+                                    <li>
+                                        <span>Настойчивый</span>
+                                        <span>Находчивый</span>
+                                        <span>Прямолинейный</span>
+                                    </li>
+                                    
+                                    <li>
+                                        <span>Коммуникабельный</span>
+                                        <span>Дипломатичный</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
