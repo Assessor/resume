@@ -85,6 +85,113 @@ header.header-title
         height: 2px
 
         background: $primary-color
+.resume-container
+    padding: 40px 0
+    .resume
+        margin-bottom: 30px
+        .resume-wrapper
+            position: relative
+            
+            padding: 70px 30px 46px
+
+            border: 1px solid #eaeaea
+            .resume__icon
+                position: absolute
+                right: 50px
+                top: 50px
+                i
+                    font-size: 45px
+                    color: #a8b1b6
+            .resume__title
+                position: relative
+                top: -7px
+                font-size: 19px
+                &::before
+                    content: ''
+                    position: absolute
+                    top: -15px
+                    left: 0
+
+                    width: 30px
+                    height: 2px
+
+                    background-color: $primary-color
+            .timeline
+                position: relative
+
+                margin-top: 40px
+                &::before
+                    content: ''
+                    
+                    position: absolute
+                    top: 0
+                    bottom: 0
+                    left: 1px
+                    width: 1px
+                    height: 100%
+
+                    background: linear-gradient(to bottom, #eaeaea 1%, #eaeaea 75%, #ffffff 100%)
+                .working,
+                .edu
+                    position: relative
+
+                    margin-bottom: 10px
+                    padding-top: 30px
+                    padding-left: 30px
+                    &::after
+                        content: ''
+
+                        position: absolute
+                        top: 33px
+                        left: -5px
+
+                        width: 14px
+                        height: 14px
+
+                        text-align: center
+
+                        background: $primary-color
+                        border: 3px solid #ffffff
+                        border-radius: 100%
+                    .working__interval,
+                    .edu__interval
+                        font-size: 12px
+                        color: #666666
+                        .working_current
+                            padding: 1px 12px
+
+                            color: #ffffff
+
+                            background: $primary-color
+                            border-radius: 6px
+            .skills
+                margin-top: 40px
+                ul
+                    margin: 0
+                    padding: 0
+                    li
+                        margin-bottom: 15px
+                        h4
+                            font-size: 13px
+                        .skill-list__rating
+                            margin-top: -6px
+                            span
+                                display: inline-block
+                                width: 49px
+                                height: 2px
+                                margin-right: 5px
+
+                                background-color: $primary-color
+                            .skill-list_transparent
+                                background-color: #888888
+                                opacity: 0.1
+
+
+
+.parfolio-container
+    padding: 40px 0
+
+    background-color: #f7f7f7
 
 .blog-container
     padding: 40px 0

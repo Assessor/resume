@@ -165,20 +165,28 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
             <div class="row">
                 <div class="col-md-4 col-sm-6">
                     <div class="resume">
-                        <div class="resume__icon"><i class="ic-toolbox"></i></div>
-                        <h3 class="resume__title">Экспертиза</h3>
-                            
-                        <div class="timeline">
-                            <div class="working">
-                                <h4 class="working__org">ООО АйТи Парма</h4>
-                                <h6 class="working__interval">Feb 2015 – <span class="working_current">Current</span></h6>
-                                <p class="working_desc">Описание</p>
-                            </div>
+                        <div class="resume-wrapper">
+                            <div class="resume__icon"><i class="fa fa-server"></i></div>
+                            <h3 class="resume__title">Экспертиза</h3>
                                 
-                            <div class="working">
-                                <h4 class="working__org">ООО АйТи Парма</h4>
-                                <h6 class="working__interval">Feb 2015 – <span class="working_current">Current</span></h6>
-                                <p class="working_desc">Описание</p>
+                            <div class="timeline">
+                                <div class="working">
+                                    <h4 class="working__org">ООО АйТи Парма</h4>
+                                    <h6 class="working__interval">Feb 2015 – <span class="working_current">Current</span></h6>
+                                    <p class="working_desc">Описание</p>
+                                </div>
+                                    
+                                <div class="working">
+                                    <h4 class="working__org">ООО АйТи Парма</h4>
+                                    <h6 class="working__interval">Feb 2015 – 2016</h6>
+                                    <p class="working_desc">Описание</p>
+                                </div>
+
+                                <div class="working">
+                                        <h4 class="working__org">ООО Прогноз</h4>
+                                        <h6 class="working__interval">Feb 2015 – 2016</span></h6>
+                                        <p class="working_desc">Описание</p>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -187,20 +195,22 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
 
                 <div class="col-md-4 col-sm-6">
                     <div class="resume">
-                        <div class="resume__icon"><i class="ic-pencil"></i></div>
-                        <h3 class="resume__title">Образование</h3>
+                        <div class="resume-wrapper">
+                            <div class="resume__icon"><i class="fa fa-edit"></i></div>
+                            <h3 class="resume__title">Образование</h3>
 
-                        <div class="timeline">
-                            <div class="edu">
-                                <h4 class="edu__org">ООО АйТи Парма</h4>
-                                <h6 class="edu__interval">Feb 2015 – 2018</h6>
-                                <p class="edu_desc">Описание</p>
-                            </div>
-                                
-                            <div class="edu">
-                                <h4 class="edu__org">ООО АйТи Парма</h4>
-                                <h6 class="edu__interval">Feb 2015 – 2018</h6>
-                                <p class="edu_desc">Описание</p>
+                            <div class="timeline">
+                                <div class="edu">
+                                    <h4 class="edu__org">ООО АйТи Парма</h4>
+                                    <h6 class="edu__interval">Feb 2015 – 2018</h6>
+                                    <p class="edu_desc">Описание</p>
+                                </div>
+                                    
+                                <div class="edu">
+                                    <h4 class="edu__org">ООО АйТи Парма</h4>
+                                    <h6 class="edu__interval">Feb 2015 – 2018</h6>
+                                    <p class="edu_desc">Описание</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -208,32 +218,74 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                     
                 <div class="col-md-4 col-sm-6">
                     <div class="resume">
-                        <div class="resume__icon"><i class="ic-skills"></i></div>
-                        <h3 class="resume__title">Skills</h3>
+                        <div class="resume-wrapper">
+                            <div class="resume__icon"><i class="fa fa-wrench"></i></div>
+                            <h3 class="resume__title">Skills</h3>
 
-                        <div class="skills">
-                            <ul class="skill-list">
-                                <li>
-                                    <h4>HTML/CSS</h4>
-                                    <div class="skill-list__rating">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span class="skill-list_transparent"></span>	
-                                    </div>
-                                </li>
-                                <li>
-                                    <h4>Jquery</h4>
-                                    <div class="skill-list__rating">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span class="skill-list_transparent"></span>	
-                                    </div>
-                                </li>
-                            </ul>
+                            <div class="skills">
+                                <ul class="skill-list">
+                                    <li>
+                                        <h4>HTML/CSS</h4>
+                                        <div class="skill-list__rating">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span class="skill-list_transparent"></span>	
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h4>JavaScript</h4>
+                                        <div class="skill-list__rating">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span class="skill-list_transparent"></span>	
+                                            <span class="skill-list_transparent"></span>	
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h4>PHP</h4>
+                                        <div class="skill-list__rating">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>	
+                                            <span class="skill-list_transparent"></span>	
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h4>Java</h4>
+                                        <div class="skill-list__rating">
+                                            <span></span>
+                                            <span class="skill-list_transparent"></span>
+                                            <span class="skill-list_transparent"></span>
+                                            <span class="skill-list_transparent"></span>	
+                                            <span class="skill-list_transparent"></span>	
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h4>Python</h4>
+                                        <div class="skill-list__rating">
+                                            <span></span>
+                                            <span></span>
+                                            <span class="skill-list_transparent"></span>	
+                                            <span class="skill-list_transparent"></span>	
+                                            <span class="skill-list_transparent"></span>	
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h4>SQL</h4>
+                                        <div class="skill-list__rating">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>	
+                                            <span class="skill-list_transparent"></span>	
+                                            <span class="skill-list_transparent"></span>	
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -331,7 +383,7 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
     </section>
 
     <section class="parfolio-container">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <header class="header-title">
