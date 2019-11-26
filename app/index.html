@@ -43,10 +43,10 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                             <a class="nav__link" href="#">Главная</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Обо мне</a>
+                            <a class="nav__link" href="#about">Обо мне</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Резюме</a>
+                            <a class="nav__link" href="#resume">Резюме</a>
                         </li>
                     </ul>
                 </div>
@@ -61,13 +61,13 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                 <div class="col-sm-5 text-center">
                     <ul class="nav">
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Мои проекты</a>
+                            <a class="nav__link" href="#portfolio">Мои проекты</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Мой блог</a>
+                            <a class="nav__link" href="#blog">Мой блог</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="#">Контакты</a>
+                            <a class="nav__link" href="#contact">Контакты</a>
                         </li>
                     </ul>
                 </div>
@@ -76,7 +76,7 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
         </div>
     </nav>
     
-    <section class="about-container">
+    <section class="about-container" id="about">
         <div class="container-fluid">
             <div class="row">
 
@@ -96,7 +96,7 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                             "Учиться, учиться и еще раз учиться!" - крылатая фраза вождя мирового пролетариата актуальна для меня и по сей день.
                         </p>
 
-                        <a class="btn btn_border btn_radius" href="#">Скачать резюме</a>
+                        <a class="btn btn_border btn_radius" href="https://perm.hh.ru/resume/a0c190fcff02a636550039ed1f5a4b497a556d" target="_blank">Посмотреть резюме</a>
                     </div>
                 </div>
 
@@ -158,7 +158,7 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
         </div>
     </section>
 
-    <section class="resume-container">
+    <section class="resume-container" id="resume">
         <div class="container">
             
             <div class="row">
@@ -401,7 +401,7 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
         </div>
     </section>
 
-    <section class="parfolio-container">
+    <section class="porfolio-container" id="prtfolio">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -411,13 +411,35 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                 </div>                
             </div>
 
-            <div class="row">
-                Вставить parlaybet.ru и mtour.parlaybet.ru
+            <div class="row" style="text-align: center;">
+                <div class="col-md-6">
+                    <div class="media-box">
+                        <div class="border"></div>
+                        <img  src="img/parlaybet.png" alt="" />
+
+                        <div class="media-content">
+                            <p>Оценка исходов спортивных событий.</p>
+                        </div>
+                    </div>
+                    <a class="portfolio-link" href="https://parlaybet.ru" target="_blank">https://parlaybet.ru</a>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="media-box">
+                        <div class="border"></div>
+                        <img  src="img/magictour.png" alt="" />
+
+                        <div class="media-content">
+                            <p>Онлайн-бронирование мест на автобусном туре.</p>
+                        </div>
+                    </div>
+                    <a class="portfolio-link" href="https://mtour.parlaybet.ru" target="_blank">https://mtour.parlaybet.ru</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="blog-container">
+    <section class="blog-container" id="blog">
         <div class="container ">
             <div class="row">
                 <div class="col-md-12">
@@ -439,12 +461,12 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                         
                             <div class="meta">
                                 <ul>
-                                    <li class="meta__date">10.10.2019</li>
-                                    <li><i class="fa fa-comment"></i><span>Комментарии<a href="#"> (2)</a></span></li>
+                                    <li class="meta__date">12.12.2020</li>
+                                    <li><i class="fa fa-comment"></i><span>Комментарии<a href="#"> (0)</a></span></li>
                                 </ul>
                             </div>
                             
-                            <p class="details__notice">Ананс записи...</p>
+                            <p class="details__notice">В разрабтке...</p>
                             
                             <a class="details__more" href="#">читать дальше <span>→</span> </a>
                         </div>
@@ -462,12 +484,12 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                         
                             <div class="meta">
                                 <ul>
-                                    <li class="meta__date">10.10.2019</li>
-                                    <li><i class="fa fa-comment"></i><span>Комментарии<a href="#"> (2)</a></span></li>
+                                    <li class="meta__date">12.12.2020</li>
+                                    <li><i class="fa fa-comment"></i><span>Комментарии<a href="#"> (0)</a></span></li>
                                 </ul>
                             </div>
                             
-                            <p class="details__notice">Ананс записи...</p>
+                            <p class="details__notice">В разрабтке...</p>
                             
                             <a class="details__more" href="#">читать дальше <span>→</span> </a>
                         </div>
@@ -485,12 +507,12 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
                         
                             <div class="meta">
                                 <ul>
-                                    <li class="meta__date">10.10.2019</li>
-                                    <li><i class="fa fa-comment"></i><span>Комментарии<a href="#"> (2)</a></span></li>
+                                    <li class="meta__date">12.12.2020</li>
+                                    <li><i class="fa fa-comment"></i><span>Комментарии<a href="#"> (0)</a></span></li>
                                 </ul>
                             </div>
                             
-                            <p class="details__notice">Ананс записи...</p>
+                            <p class="details__notice">В разрабтке...</p>
                             
                             <a class="details__more" href="#">читать дальше <span>→</span> </a>
                         </div>
@@ -508,7 +530,7 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
         </div>
     </section>
 
-    <section class="contact-container">
+    <section class="contact-container" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -521,7 +543,7 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
             <div class="row">
                 <div class="col-md-5">
                     <div class="send-form">
-                        <form method="post" action="">
+                        <form method="post" action="send.php">
                             <label for="name"></label><input class="send-form__input" id="name" name="name" type="text" placeholder="Имя *" value="" />
                             <label for="email"></label><input class="send-form__input" id="email" name="email" type="text" placeholder="Email *" value="" />
                             <label for="subject"></label><input class="send-form__input" id="subject" name="subject" type="text" placeholder="Тема письма" value="" />
@@ -547,7 +569,7 @@ class, id, name, type, src, href, placeholder, width, height, alt, title, requir
 
                         <div class="contact-details">
                             <h5>Позвонить мне</h5>
-                            <p>Офис : +7-123-22-55-444<br /> 
+                            <p>Офис : +7-342-25-43-434 (243)<br />
                             Сотовый : +7-951-93-89-665</p>
                         </div>
                     </div>
